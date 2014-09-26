@@ -3,7 +3,7 @@ magic
 
 CSS3 Animations with special effects. Now on beta, more effects coming soon. Many thanks to [daneden](http://daneden.me/animate/) for inspiration!
 My next step is to minifing the code.
-Take a look at the demo [link to demo page](http://www.minimamente.com/magic-css3-animations)
+Take a look at the demo [NEW DEMO PAGE](http://minimamente.com/example/magic_animations/)
 
 ##Installation
 
@@ -34,6 +34,14 @@ setTimeout(function(){
 }, 5000);
 ```
 
+If you want to load the animation after certain time but with infinite loop, you can use this example:
+```js
+//set timer to 3 seconds, after that, load the magic animation and repeat forever
+setInterval(function(){ 
+	$('.yourdiv').toggleClass('magictime puffIn');
+}, 3000 );
+```
+
 You can change the time of the animation by set the class "magictime" for example:
 ```css
 .magictime {
@@ -62,4 +70,8 @@ If you want to assign the timing to a specific animation, you can use that code 
 -o-animation-duration: 10s;
 animation-duration: 10s;
 }
+```
+##Bower Installation
+```
+bower install magic
 ```
